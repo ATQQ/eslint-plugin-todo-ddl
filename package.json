@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-todo-ddl",
+  "version": "1.0.0",
+  "description": "检测代码中的TODO或自定义注释内容是否过期或者已经到期",
+  "main": "index.js",
+  "repository": {
+    "directory": "/",
+    "url": "https://github.com/ATQQ/eslint-plugin-todo-ddl",
+    "type": "git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/lib/rules"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "sugar",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "mocha": "^7.1.2"
+  }
+}
