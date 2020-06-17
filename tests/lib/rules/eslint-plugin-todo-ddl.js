@@ -8,7 +8,7 @@ const ruleTester = new RuleTester({
 
 const expiredWord = (text) => `TODO WARN: 已经过截止日期，请立即修改 --> ${text}`
 const expiringSoonWords = (days, text) => `TODO WARN: 还有${days}天截止，请尽快修改 --> ${text}`
-const invalidWord = (text) => `TODO WARN: 没有设置有效的Deadline,设置方法(https://km.sankuai.com/page/354295200) --> ${text}`
+const invalidWord = (text) => `TODO WARN: 没有设置有效的Deadline,设置方法(https://github.com/ATQQ/eslint-plugin-todo-ddl) --> ${text}`
 
 const flag = ['future', 'FIx', 'wait']
 const ddl = ['deadline', 'last date', 'waitdate']
