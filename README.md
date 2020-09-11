@@ -13,7 +13,7 @@ $ npm i eslint --save-dev
 Next, install `eslint-plugin-todo-ddl`:
 
 ```
-$ mnpm install eslint-plugin-todo-ddl --save-dev
+$ npm install eslint-plugin-todo-ddl --save-dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-todo-ddl` globally.
