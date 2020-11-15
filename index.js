@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 module.exports = {
   rules: {
-    'diy': require('./lib/rules/eslint-plugin-todo-ddl') 
+    diy: require("./lib/rules/eslint-plugin-todo-ddl"),
   },
   rulesConfig: {
-    'diy': 1
-  }
+    diy: 1,
+  },
 };
