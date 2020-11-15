@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "mocha tests/lib/rules",
-    "lint": "eslint --fix src tests"
+    "lint": "eslint --fix src tests",
+    "t": "lint-staged"
   },
   "keywords": [
     "eslint",
@@ -24,10 +25,34 @@
   "author": "sugar",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitlint": "^11.0.0",
+    "cz-customizable": "^6.3.0",
     "eslint": "^7.13.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-todo-ddl": "^1.1.1",
+    "lint-staged": "^10.5.1",
     "mocha": "^7.1.2",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e $GIT_PARAMS",
+    "pre-push": "branchlint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-configrc.js"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix src",
+      "git add ."
+    ]
   }
 }
