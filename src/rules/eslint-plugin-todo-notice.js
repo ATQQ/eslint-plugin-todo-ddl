@@ -87,19 +87,19 @@ module.exports = {
           // 未设置DDL或者DDL不合法情况
           if (!date) {
             errMsg =
-              "没有设置有效的Deadline,设置方法(https://github.com/ATQQ/eslint-plugin-todo-ddl)";
+              "没有设置有效的Deadline,设置方法(https://github.com/BertramXue/eslint-plugin-todo-notice)";
           } else {
             const TODODate = new Date(date).getTime();
             const interval = TODODate - Date.now();
             // 如果已经到期
             if (interval < 0 || interval < oneDay) {
-              errMsg = "已经过截止日期，请立即修改";
+              errMsg = "已经过截止日期，请立即修改，避免出现遗漏的bug";
             } else {
               // 剩余天数(向下取整)
               const theRestDays = ~~(interval / oneDay);
               errMsg =
                 theRestDays <= dWarnLine
-                  ? `还有${theRestDays}天截止，请尽快修改`
+                  ? `还有${theRestDays}天截止，请尽快修改，避免出现遗漏的bug`
                   : "";
             }
           }

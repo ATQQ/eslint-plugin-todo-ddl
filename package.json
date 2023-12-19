@@ -1,11 +1,11 @@
 {
-  "name": "eslint-plugin-todo-ddl",
+  "name": "eslint-plugin-todo-notice",
   "version": "1.1.1",
   "description": "检测代码中的TODO或自定义注释内容是否过期或者已经到期",
   "main": "index.js",
   "repository": {
     "directory": "/",
-    "url": "https://github.com/ATQQ/eslint-plugin-todo-ddl",
+    "url": "https://github.com/BertramXue/eslint-plugin-todo-notice",
     "type": "git"
   },
   "directories": {
@@ -21,7 +21,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "sugar",
+  "author": "BertramXue",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
